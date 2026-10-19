@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechNews Today - Portal de Tecnologia</title>
+
+    <!-- Importa o arquivo CSS responsável pela aparência da página -->
+    <link rel="stylesheet" href="10a_desafio.css">
+</head>
+<body>
+
+    <!-- Cabeçalho do portal com título e subtítulo -->
+    <header class="cabecalho">
+        <h1 class="logo">📱 TechNews Today</h1>
+        <p class="tagline">As <strong>últimas novidades</strong> do mundo <em>tech</em></p>
+    </header>
+
+    <!-- Conteúdo principal da página -->
+    <main class="conteudo">
+
+        <!-- Artigo em destaque sobre inteligência artificial -->
+        <article class="artigo-destaque">
+            <h2>IA Revoluciona Desenvolvimento</h2>
+
+            <!-- Informa a data de publicação do artigo -->
+            <time datetime="2025-08-07" class="data">7 de Agosto, 2025</time>
+
+            <p>Inteligência artificial está transformando como criamos software...</p>
+
+            <!-- Permite expandir o conteúdo para ler mais informações -->
+            <details class="leia-mais">
+                <summary>Leia mais &rarr;</summary>
+                <p>ChatGPT e outras ferramentas estão mudando o cenário tech mundial.</p>
+            </details>
+        </article>
+
+        <!-- Exibição de um vídeo -->
+        <section class="secao-video">
+            <h3>📺 Tech em Vídeo</h3>
+
+            <!-- Incorpora um vídeo do YouTube por meio de um iframe -->
+            <iframe class="video-embed" width="300" height="200"
+                src="https://www.youtube.com/embed/eqUFCr1mI3Y"
+                title="Tech News Video">
+            </iframe>
+        </section>
+
+        <!-- Seção de inscrição na newsletter -->
+        <section class="secao-newsletter">
+            <h3>📧 Newsletter</h3>
+
+            <!-- Formulário que envia os dados para subscribe.php usando POST -->
+            <form action="subscribe.php" method="post" class="form-newsletter">
+
+                <!-- Campo para informar o e-mail -->
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <!-- Lista de opções para selecionar a área de interesse -->
+                <label for="interesse">Área de Interesse:</label>
+                <select id="interesse" name="interesse">
+                    <option value="ia">Inteligência Artificial</option>
+                    <option value="mobile">Desenvolvimento Mobile</option>
+                    <option value="web">Tecnologias Web</option>
+                </select>
+
+                <!-- Caixa de seleção para aceitar os termos -->
+                <div class="checkbox-container">
+                    <input type="checkbox" id="aceito" name="aceito" required>
+                    <label for="aceito">Aceito os termos</label>
+                </div>
+
+                <!-- Botão responsável por enviar o formulário -->
+                <button type="submit" class="btn-inscrever">Inscrever-se</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Rodapé com direitos autorais e informações de contato -->
+    <footer class="rodape">
+        <p>&copy; 2025 TechNews Today &bull; Todos os direitos reservados</p>
+        <address>Contato: <a href="mailto:info@technews.com">info@technews.com</a></address>
+    </footer>
+
+</body>
+</html>
